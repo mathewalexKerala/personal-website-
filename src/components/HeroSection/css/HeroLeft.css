@@ -1,0 +1,38 @@
+.hero-left {
+  background-color: #131315;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.hero-left img {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 100vw;
+  margin: 1.4rem;
+  object-fit: cover;
+}
+.hero-left h1 {
+  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 2.2rem + 1.5vw, 4rem);
+  line-height: 72px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin: 1.4rem;
+  max-width: 50ch;
+}
+.hero-left span {
+  color: #8a8a93;
+}
+
+@media (width<=40em) {
+  .hero-left img,
+  .hero-left h1 {
+    margin: 0;
+  }
+  .hero-left h1 {
+    line-height: 48px;
+  }
+  .hero-left img {
+    margin-block: 1em;
+  }
+}

@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #131315;
+  padding: 1rem 2rem;
+  border-radius: 100vw;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+footer p:last-child {
+  color: #8a8a93;
+}

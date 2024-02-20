@@ -1,0 +1,39 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.about_first {
+  background-color: #131315;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about_second {
+  background-color: #131315;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.first_head {
+  font-size: 3rem;
+  font-size: clamp(3rem, 2.9rem + 0.5vw, 3.5rem);
+  font-size: 500;
+}
+.second_head {
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
+  font-weight: 500;
+}
+
+.second_head span {
+  color: #8a8a93;
+}
+
+@media (width<=50em) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}

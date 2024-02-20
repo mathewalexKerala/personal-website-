@@ -1,0 +1,73 @@
+.works {
+  background-color: #131315;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  min-height: 300px;
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem 3rem;
+  flex-wrap: wrap;
+}
+
+.one {
+  display: flex;
+  align-items: flex-end;
+  font-size: 5rem;
+  font-size: clamp(5rem, 3.5rem + 7.5vw, 12.5rem);
+  transition: width 350ms cubic-bezier(0, 0.55, 0.45, 1);
+  position: relative;
+}
+
+.one::before {
+  content: "";
+  height: 0.35rem;
+  border-radius: 5px;
+  left: 30px;
+  bottom: 0;
+  width: 0%;
+  position: absolute;
+  background-color: #f55200;
+  transition: width 350ms cubic-bezier(0, 0.55, 0.45, 1),
+    left 350ms cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.two {
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+}
+
+.two svg {
+  transition: transform 350ms cubic-bezier(0, 0.55, 0.45, 1);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  background-color: #ff5e1a;
+  width: 6.25rem;
+  height: 6.25rem;
+  padding: 1rem;
+}
+
+.two svg:hover {
+  transform: translateX(-1.125rem);
+  cursor: pointer;
+}
+.works.hovered .one::before {
+  width: 100%;
+  transition: all 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media (width<50em) {
+  .two svg {
+    width: 5rem;
+    height: 5rem;
+  }
+  .works {
+    flex-direction: column;
+    min-height: 15.625rem;
+  }
+  .one::before {
+    left: 10px;
+    bottom: -5px;
+  }
+}
