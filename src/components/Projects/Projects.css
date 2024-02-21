@@ -1,0 +1,110 @@
+.project {
+  display: flex;
+  justify-content: space-between;
+  height: 98vh;
+}
+.project_first {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-self: flex-end;
+  position: sticky;
+  padding-bottom: 10%;
+  padding-right: 10%;
+}
+.project_first span {
+  color: #ff5e1a;
+  font-weight: 500;
+}
+
+.project_first h1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.project_first p {
+  max-width: 70ch;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.9em;
+}
+
+.project_second {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  padding-block-start: 20%;
+  scrollbar-width: none;
+}
+
+.project_second::-webkit-scrollbar {
+  display: none;
+}
+
+.project_second li h5 {
+  padding-block: 1rem;
+  font-size: 2.1rem;
+  font-size: clamp(2.1rem, 1.32rem + 3.9vw, 6rem);
+  line-height: 1em;
+  text-transform: uppercase;
+  transition: all 650ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.project_second li p {
+  border-bottom: 1px solid snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-block: 1em;
+  color: #ff5e1a;
+}
+
+.project_second li h5:hover {
+  font-style: italic;
+  text-decoration: none;
+  transform: translate(5px);
+}
+
+.goback {
+  position: absolute;
+  top: 8%;
+  transform: rotate(-90deg);
+  left: 10px;
+}
+.goback .linkto {
+  transition: all 350ms cubic-bezier(0.33, 1, 0.68, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+}
+.goback .linkto:hover {
+  color: #ff5e1a;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+@media (width<=1100px) {
+  .project {
+    flex-wrap: wrap;
+  }
+
+  .project_first {
+    margin-top: 25%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+  }
+  .goback {
+    top: 5%;
+    left: 0;
+  }
+  .goback .linkto {
+    color: #ff5e1a;
+    font-size: 0.7rem;
+  }
+
+  .goback .linkto:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ff5e1a;
+  }
+}
