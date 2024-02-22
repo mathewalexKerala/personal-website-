@@ -19,6 +19,7 @@
   color: #fff;
   border: none;
   padding: 1.5em 2em;
+  margin-block-end: 1rem;
   font-size: 1.4rem;
   font-size: clamp(1.2rem, 1.16rem + 0.16vw, 1.4rem);
   font-weight: bold;
@@ -41,10 +42,5 @@
 
   .hero-right h1 {
     line-height: 48px;
-  }
-
-  .hero-right button {
-    width: auto;
-    padding: 1.2em 0.5em;
   }
 }
