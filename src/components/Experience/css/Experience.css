@@ -23,7 +23,7 @@
   height: 0.35rem;
   border-radius: 5px;
   left: 30px;
-  bottom: 0;
+  bottom: -10px;
   width: 0%;
   position: absolute;
   background-color: #f55200;

@@ -1,0 +1,103 @@
+.myexp {
+  padding-inline: 1rem;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.myexp .one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: start;
+  padding-block: 1rem;
+}
+
+.myexp h1 {
+  font-size: 3.5rem;
+  font-size: clamp(3.5rem, 2.2rem + 6.5vw, 10rem);
+  text-align: left;
+  padding-block: 1rem;
+  font-weight: 500;
+}
+
+.myexp img {
+  display: inline-block;
+  max-width: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+}
+.myexp .two {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  max-width: 50%;
+}
+.myexp .two h1,
+.myexp .two h4 {
+  line-height: 1.3em;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.myexp .two h1 span {
+  color: #ff5f1ada;
+  font-weight: 500;
+}
+.myexp .two p {
+  line-height: 1.3em;
+}
+
+.myexp .two h3 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #ff5f1ada;
+  font-weight: 600;
+  line-height: 1.75em;
+}
+
+.myexp .experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.myexp .experience p {
+  line-height: 1.5em;
+}
+.myexp .cv {
+  color: white;
+  border: none;
+  border-radius: 99px;
+  background-color: #ff5f1a;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 0.6em 1em;
+  max-width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 650ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.myexp .cv:hover {
+  background-color: rgba(255, 255, 255, 0.863);
+  color: #ff5f1a;
+}
+
+@media (width<=60em) {
+  .myexp .one {
+    flex-direction: column;
+    margin-top: 20%;
+    align-items: start;
+  }
+  .myexp .two {
+    max-width: 100%;
+    gap: 1rem;
+  }
+  .myexp .cv {
+    max-width: 100%;
+  }
+}

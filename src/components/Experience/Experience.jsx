@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
-import "./Experience.css";
+import "./css/Experience.css";
+
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -9,7 +10,7 @@ const Experience = () => {
     <div className={isHovered ? "exp hovered" : "exp"}>
       <div className="one">Experience</div>
       <div className="two">
-        <Link to="/projects">
+        <Link to="/experience">
           <svg
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
