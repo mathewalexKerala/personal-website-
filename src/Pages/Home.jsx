@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 // css
 import "./Home.css";
 
@@ -11,6 +12,10 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import Works from "../components/Works/Works";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="home">
       <Navbar />

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./Projects.css";
 import { Link } from "react-router-dom";
 
@@ -25,10 +26,17 @@ const Projects = () => {
       tech: "reactjs,mui,html,css",
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="goback">
-        <Link to="/" className="linkto">Home</Link>
+        <Link to="/" className="linkto">
+          Home
+        </Link>
       </div>
       <div className="project">
         <section className="project_first">
