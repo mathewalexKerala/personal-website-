@@ -10,12 +10,13 @@ import SocialMedia from "../components/SocialMedia/SocialMedia";
 import Skills from "../components/Skills/Skills";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Works from "../components/Works/Works";
+import Experience from "../components/Experience/Experience";
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div className="home">
       <Navbar />
@@ -24,6 +25,7 @@ const Home = () => {
       <AboutMe />
       <Skills />
       <Works />
+      <Experience/>
       <Footer />
     </div>
   );
