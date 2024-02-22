@@ -1,3 +1,6 @@
+// css
+import "./Home.css";
+
 // components
 import HeroSection from "../components/HeroSection/HeroSection";
 import Navbar from "../components/Navbar/Navbar";
@@ -6,8 +9,6 @@ import SocialMedia from "../components/SocialMedia/SocialMedia";
 import Skills from "../components/Skills/Skills";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Works from "../components/Works/Works";
-
-import "./Home.css";
 
 const Home = () => {
   return (

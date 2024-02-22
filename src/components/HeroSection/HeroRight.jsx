@@ -7,11 +7,10 @@ const HeroRight = () => {
         Have a project <br />
         in mind?
       </h1>
-      {/* <button> */}
-        <a href="mailto:jishnutraj817@gmail.com" className="mymail">
-          jishnutraj817@gmail.com
-        </a>
-      {/* </button> */}
+
+      <a href="mailto:jishnutraj817@gmail.com" className="mymail">
+        jishnutraj817@gmail.com
+      </a>
     </section>
   );
 };
