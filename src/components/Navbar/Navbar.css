@@ -7,27 +7,3 @@
   background-color: #131315;
   font-size: 1.1rem;
 }
-
-.navbar ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-}
-
-.navbar ul li {
-  list-style-type: none;
-}
-
-.menu {
-  display: none;
-}
-
-@media (max-width: 50em) {
-  .navbar ul {
-    display: none;
-  }
-  .menu {
-    display: inline-block;
-  }
-}
