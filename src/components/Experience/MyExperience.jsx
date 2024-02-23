@@ -6,10 +6,50 @@ import { Link } from "react-router-dom";
 import profile from "../../image/profile.jpg";
 import resume from "./resume/JISHNU.pdf";
 
+import { DiNodejs } from "react-icons/di";
+
+import { FaNpm, FaCss3 } from "react-icons/fa";
+import { TbApi } from "react-icons/tb";
+import { IoLogoHtml5 } from "react-icons/io5";
+import { RiReactjsLine, RiBootstrapFill } from "react-icons/ri";
+
+import {
+  SiJavascript,
+  SiExpress,
+  SiMongodb,
+  SiMui,
+  SiTailwindcss,
+  SiStyledcomponents,
+  SiPostman,
+  SiNetlify,
+  SiLinux,
+  SiRedux,
+} from "react-icons/si";
+
 const MyExperience = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const skills = [
+    { name: "Reactjs", logo: <RiReactjsLine /> },
+    { name: "JavaScript", logo: <SiJavascript /> },
+    { name: "HTML5", logo: <IoLogoHtml5 /> },
+    { name: "CSS3", logo: <FaCss3 /> },
+    { name: "Nodejs", logo: <DiNodejs /> },
+    { name: "Expressjs", logo: <SiExpress /> },
+    { name: "MongoDb", logo: <SiMongodb /> },
+    { name: "Material-Ui", logo: <SiMui /> },
+    { name: "Tailwind", logo: <SiTailwindcss /> },
+    { name: "Styled-Components", logo: <SiStyledcomponents /> },
+    { name: "Rest Api", logo: <TbApi /> },
+    { name: "Npm", logo: <FaNpm /> },
+    { name: "Postman", logo: <SiPostman /> },
+    { name: "Netlify", logo: <SiNetlify /> },
+    { name: "Linux", logo: <SiLinux /> },
+    { name: "Bootstrap", logo: <RiBootstrapFill /> },
+    { name: "Redux", logo: <SiRedux /> },
+  ];
 
   return (
     <>
@@ -18,62 +58,52 @@ const MyExperience = () => {
           Home
         </Link>
       </div>
-      <article className="myexp">
-        <section className="one">
-          <h1>Who Am I?</h1>
-          <img src={profile} alt="mypicture" width="354px" height="400px" />
-        </section>
-        <article className="two">
-          <h1>
-            I'm Jishnu,<span> web developer</span>.
-          </h1>
-          <p>
-            I've been exploring digital creation for quite some time, and I've
-            really taken a liking to web development. I've learned a lot about
-            it, using languages like JavaScript and frameworks like React and
-            Node.js. Every project I work on, big or small, helps me grow.
-          </p>
-          <p>
-            What I love about web development is the chance to make things that
-            people find useful. It's not just about writing code; it's about
-            creating experiences that solve problems and make things easier for
-            users.
-          </p>
-          <p>
-            I listen to what users have to say and try to make solutions that
-            really work for them. I'm always learning and trying new things to
-            make my work better and better.
-          </p>
-          <p>This is one of my favourite quotes (by Peter Drucker):</p>
-          <h4>
-            “There is nothing so useless as doing efficiently that which should
-            not be done at all.”
-          </h4>
-          <p>
-            This resonates so deeply with me because I have no desire to make
-            pretty things just for the sake of it. Some people love that! But
-            it's not for me. I only want to make, design or build ideas and
-            products that are real, that matter and have an impact in the world.
-          </p>
-          <div className="experience">
-            <h3>experience</h3>
-            <p>- Degree in Computer Science</p>
+      <article className="center">
+        <h1>
+          Jishnu t raj <br />
+          <span> Full stack developer</span>
+        </h1>
+        <div className="flex">
+          <div className="expfirst">
+            <img
+              src={profile}
+              alt="myprofilepicture"
+              width="320px"
+              height="320px"
+            />
+          </div>
+          <div className="expfirst">
+            <h3>About</h3>
             <p>
-              - 2 years experience in web development and 6 months of industrial
-              experience as a full stack developer.
+              I'm Jishnu, a web developer passionate about creating
+              user-friendly experiences. Proficient in JavaScript, React, and
+              Node.js, I craft solutions that solve real problems.
             </p>
-            <h3>skills</h3>
             <p>
-              Reactjs / Javascript / HTML5 / CSS3 / Agile Methodologies /
-              Nodejs/ Expressjs / MongoDb / Rest Api / Tailwind / Material-Ui /
-              Styled-Components / Linux / npm / Postman / Bootstrap / Netlify /
-              Redux.
+              I'm continuously learning and improving, I listen to user feedback
+              to deliver valuable digital products.
             </p>
             <a className="cv" href={resume} download>
-              Download Resume
+              Resume
             </a>
+            <div className="experience">
+              <h3>experience</h3>
+              <p>- Degree in Computer Science</p>
+              <p>
+                - 2 years experience in web development and 6 months of
+                industrial experience as a full stack developer.
+              </p>
+              <h3>skills</h3>
+              <ul>
+                {skills.map((skill, index) => (
+                  <li key={index}>
+                    - {skill.name} {skill.logo}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </article>
+        </div>
       </article>
     </>
   );
