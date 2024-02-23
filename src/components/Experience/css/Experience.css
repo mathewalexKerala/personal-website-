@@ -64,7 +64,7 @@
   }
   .exp {
     flex-direction: column;
-    min-height: 15.625rem;
+    min-height: 200px;
   }
   .exp .one::before {
     left: 10px;

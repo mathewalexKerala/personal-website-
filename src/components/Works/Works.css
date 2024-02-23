@@ -64,7 +64,7 @@
   }
   .works {
     flex-direction: column;
-    min-height: 15.625rem;
+    min-height: 200px;
   }
   .one::before {
     left: 10px;
