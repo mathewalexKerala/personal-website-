@@ -65,12 +65,7 @@ const MyExperience = () => {
         </h1>
         <div className="flex">
           <div className="expfirst">
-            <img
-              src={profile}
-              alt="myprofilepicture"
-              width="320px"
-              height="320px"
-            />
+            <img src={profile} alt="myprofilepicture" />
           </div>
           <div className="expfirst">
             <h3>About</h3>

@@ -31,6 +31,8 @@
   object-position: center;
   image-rendering: auto;
   margin-block-start: 4em;
+  width: 320px;
+  height: 320px;
 }
 
 .expfirst {
@@ -40,7 +42,7 @@
   font-size: 1.2rem;
   max-width: 63ch;
   line-height: 1.3em;
-  padding-block-end: 2rem;
+  margin-block: 1.5rem;
 }
 .expfirst h3 {
   color: #8a8a93;
@@ -89,7 +91,7 @@
 
 .expfirst .experience ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .expfirst .experience li {
@@ -109,7 +111,19 @@
     max-width: 60%;
   }
 
-  .expfirst .experience ul {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .expfirst img {
+    margin-block-start: 0;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (width<=40em) {
+  .center h1 {
+    margin-block-start: 20%;
+  }
+  .expfirst img {
+    width: 250px;
+    height: 250px;
   }
 }
