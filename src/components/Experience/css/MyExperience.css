@@ -9,7 +9,7 @@
   font-size: 2.1rem;
   font-size: clamp(2.1rem, 1.32rem + 3.9vw, 6rem);
   text-align: center;
-  padding-block: 15%;
+  padding-block: 10%;
 }
 
 .center h1 span {
