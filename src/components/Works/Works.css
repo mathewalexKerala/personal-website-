@@ -59,8 +59,8 @@
 
 @media (width<50em) {
   .two svg {
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
   .works {
     flex-direction: column;
