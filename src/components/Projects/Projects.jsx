@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "./Projects.css";
 import { Link } from "react-router-dom";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 const Projects = () => {
   const projects = [
@@ -49,22 +50,27 @@ const Projects = () => {
             in skill and knowledge every day.
           </p>
         </section>
-        <section className="project_second">
-          <ul>
-            {projects.map((project, index) => (
-              <li key={index}>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <h5>{project.name}</h5>
-                </a>
-                <p>- {project.tech}</p>
-              </li>
-            ))}
-          </ul>
-        </section>
+        <ReactLenis
+          className="project_second"
+          options={{ lerp: 0.1, duration: 1.5, smoothTouch: true, smooth: true }}
+        >
+          <section className="project_second">
+            <ul>
+              {projects.map((project, index) => (
+                <li key={index}>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h5>{project.name}</h5>
+                  </a>
+                  <p>- {project.tech}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </ReactLenis>
       </div>
     </>
   );
