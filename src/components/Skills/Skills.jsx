@@ -3,6 +3,7 @@ import "./Skills.css";
 const Skills = () => {
   const skills = [
     "reactjs",
+    "react native",
     "javascript",
     "html5",
     "css3",

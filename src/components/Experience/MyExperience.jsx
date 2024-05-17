@@ -13,18 +13,7 @@ import { TbApi } from "react-icons/tb";
 import { IoLogoHtml5 } from "react-icons/io5";
 import { RiReactjsLine, RiBootstrapFill } from "react-icons/ri";
 
-import {
-  SiJavascript,
-  SiExpress,
-  SiMongodb,
-  SiMui,
-  SiTailwindcss,
-  SiStyledcomponents,
-  SiPostman,
-  SiNetlify,
-  SiLinux,
-  SiRedux,
-} from "react-icons/si";
+import { SiJavascript, SiExpress, SiMongodb, SiMui, SiTailwindcss, SiStyledcomponents, SiPostman, SiNetlify, SiLinux, SiRedux } from "react-icons/si";
 
 const MyExperience = () => {
   useEffect(() => {
@@ -33,6 +22,7 @@ const MyExperience = () => {
 
   const skills = [
     { name: "Reactjs", logo: <RiReactjsLine /> },
+    { name: "React Native", logo: <RiReactjsLine /> },
     { name: "JavaScript", logo: <SiJavascript /> },
     { name: "HTML5", logo: <IoLogoHtml5 /> },
     { name: "CSS3", logo: <FaCss3 /> },
@@ -61,7 +51,7 @@ const MyExperience = () => {
       <article className="center">
         <h1>
           Jishnu t raj <br />
-          <span> Full stack developer</span>
+          <span> Full stack developer </span>
         </h1>
         <div className="flex">
           <div className="expfirst">
@@ -70,24 +60,17 @@ const MyExperience = () => {
           <div className="expfirst">
             <h3>About</h3>
             <p>
-              I'm Jishnu, a web developer passionate about creating
-              user-friendly experiences. Proficient in JavaScript, React, and
-              Node.js, I craft solutions that solve real problems.
+              I'm Jishnu, a web & app developer passionate about creating user-friendly experiences. Proficient in JavaScript, React, and Node.js, I craft
+              solutions that solve real problems.
             </p>
-            <p>
-              I'm continuously learning and improving, I listen to user feedback
-              to deliver valuable digital products.
-            </p>
+            <p>I'm continuously learning and improving, I listen to user feedback to deliver valuable digital products.</p>
             <a className="cv" href={resume} download>
               Resume
             </a>
             <div className="experience">
               <h3>experience</h3>
               <p>- Degree in Computer Science</p>
-              <p>
-                - 2 years experience in web development and 6 months of
-                industrial experience as a full stack developer.
-              </p>
+              <p>- 2 years experience in web development and 10 months of industrial experience as a full stack developer.</p>
               <h3>skills</h3>
               <ul>
                 {skills.map((skill, index) => (

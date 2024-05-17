@@ -8,7 +8,7 @@ const HeroLeft = () => {
       <img width="100px" height="100px" src={profile} alt="profile picture" />
       <h1>
         jishnu t raj <br />
-        is a full stack developer <span>currently working in Bangalore.</span>
+        is a full stack web & app developer <span>currently working in Bangalore.</span>
       </h1>
     </article>
   );
