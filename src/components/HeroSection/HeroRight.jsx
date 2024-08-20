@@ -9,7 +9,7 @@ const HeroRight = () => {
       </h1>
 
       <a href="mailto:jishnutraj817@gmail.com" className="mymail">
-        jishnutraj817@gmail.com
+       mathewalex557@gmail.com
       </a>
     </section>
   );

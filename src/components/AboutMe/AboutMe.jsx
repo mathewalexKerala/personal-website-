@@ -29,7 +29,7 @@ const AboutMe = () => {
       </section>
       <section className="about_second">
         <h1 className="second_head">
-          As a web & app developer,
+          As a web developer,
           <br />I specialize in creating unique visual identities for digital
           products. <br />
           <span>

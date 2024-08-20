@@ -2,30 +2,26 @@ import { useEffect } from "react";
 import "./Projects.css";
 import { Link } from "react-router-dom";
 import { ReactLenis } from "@studio-freight/react-lenis";
-
+import Footer from "../Footer/Footer";
 const Projects = () => {
   const projects = [
     {
-      name: "Ai Image prompt",
-      link: "https://openai-ai-images.netlify.app/",
-      tech: "MERN",
+      name: "Bank of Maharashtra",
+      link: "https://maharashtra-bank.vercel.app/",
+      tech: "nextjs",
     },
 
     {
-      name: "ECOMMERCE",
-      link: "https://thapastore.netlify.app/",
-      tech: "reactjs,redux,styled-components",
+      name: "Webdevtools",
+      link: "https://wdt.adambashaahmednaji.com/",
+      tech: "nextjs,redux,styled-components",
     },
     {
-      name: "Flipkart Clone",
-      link: "https://flipcartecommerce.netlify.app/",
-      tech: "MERN",
+      name: "Osumare Landing Page",
+      link: "https://osumarelandingpage.netlify.app",
+      tech: "Reactjs",
     },
-    {
-      name: "CREATIVE ENVIRONMENTAL SOLUTIONS",
-      link: "https://cenvs.com/",
-      tech: "reactjs,mui,html,css",
-    },
+    
   ];
 
   useEffect(() => {
@@ -72,6 +68,7 @@ const Projects = () => {
           </section>
         </ReactLenis>
       </div>
+      <Footer/>
     </>
   );
 };

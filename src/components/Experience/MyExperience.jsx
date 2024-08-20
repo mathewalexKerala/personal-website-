@@ -3,8 +3,8 @@ import "./css/MyExperience.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import profile from "../../image/profile.jpg";
-import resume from "./resume/JISHNU.pdf";
+import profile from "../../image/profile.jpeg";
+import resume from "./resume/Mathew_Alex_CV.pdf";
 
 import { DiNodejs } from "react-icons/di";
 
@@ -50,8 +50,8 @@ const MyExperience = () => {
       </div>
       <article className="center">
         <h1>
-          Jishnu t raj <br />
-          <span> Full stack developer </span>
+          Mathew Alex <br />
+          <span> Mern stack developer </span>
         </h1>
         <div className="flex">
           <div className="expfirst">
@@ -60,7 +60,7 @@ const MyExperience = () => {
           <div className="expfirst">
             <h3>About</h3>
             <p>
-              I'm Jishnu, a web & app developer passionate about creating user-friendly experiences. Proficient in JavaScript, React, and Node.js, I craft
+              I'm Mathew Alex, a web & app developer passionate about creating user-friendly experiences. Proficient in JavaScript, React, and Node.js, I craft
               solutions that solve real problems.
             </p>
             <p>I'm continuously learning and improving, I listen to user feedback to deliver valuable digital products.</p>
@@ -69,8 +69,8 @@ const MyExperience = () => {
             </a>
             <div className="experience">
               <h3>experience</h3>
-              <p>- Degree in Computer Science</p>
-              <p>- 2 years experience in web development and 10 months of industrial experience as a full stack developer.</p>
+              <p>- Degree in Computer Application</p>
+              <p>- 2 years experience in web development </p>
               <h3>skills</h3>
               <ul>
                 {skills.map((skill, index) => (

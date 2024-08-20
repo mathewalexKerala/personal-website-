@@ -1,14 +1,14 @@
 import "./css/HeroLeft.css";
 
-import profile from "../../image/profile.jpg";
+import profile from "../../image/profile.jpeg";
 
 const HeroLeft = () => {
   return (
     <article className="hero-left">
       <img width="100px" height="100px" src={profile} alt="profile picture" />
       <h1>
-        jishnu t raj <br />
-        is a full stack web & app developer <span>currently working in Bangalore.</span>
+       I'm Mathew Alex <br />
+        a full stack web  <span>who is passionate in Coding</span>
       </h1>
     </article>
   );

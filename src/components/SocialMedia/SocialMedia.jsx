@@ -4,10 +4,10 @@ const SocialMedia = () => {
   return (
     <section className="social">
       
-        <a href="https://github.com/jtr-code" target="_blank">
+        <a href="https://www.linkedin.com/in/mathew-alex-mer0n/" target="_blank">
           linkedin.
         </a>
-        <a href="https://www.linkedin.com/in/jishnutraj/" target="_blank">
+        <a href="https://github.com/mathewalexKerala" target="_blank">
           github.
         </a>
     </section>

@@ -3,7 +3,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <p>jishnu t raj.</p>
+      <p>Mathew Alex</p>
     </nav>
   );
 };
