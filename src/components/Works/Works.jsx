@@ -10,7 +10,7 @@ const Works = () => {
       <div className="one">Works</div>
 
       <div className="two">
-        <Link to="/work">
+        <Link to="/projects">
           <svg
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
