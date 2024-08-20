@@ -13,7 +13,7 @@ import { TbApi } from "react-icons/tb";
 import { IoLogoHtml5 } from "react-icons/io5";
 import { RiReactjsLine, RiBootstrapFill } from "react-icons/ri";
 
-import { SiJavascript, SiExpress, SiMongodb, SiMui, SiTailwindcss, SiStyledcomponents, SiPostman, SiNetlify, SiLinux, SiRedux } from "react-icons/si";
+import { SiJavascript, SiExpress, SiMongodb, SiMui, SiTailwindcss, SiStyledcomponents, SiPostman, SiNetlify, SiLinux, SiRedux,SiAwsorganizations } from "react-icons/si";
 
 const MyExperience = () => {
   useEffect(() => {
@@ -24,7 +24,7 @@ const MyExperience = () => {
     { name: "Reactjs", logo: <RiReactjsLine /> },
     { name: "React Native", logo: <RiReactjsLine /> },
     { name: "JavaScript", logo: <SiJavascript /> },
-    { name: "HTML5", logo: <IoLogoHtml5 /> },
+    { name: "HTML", logo: <IoLogoHtml5 /> },
     { name: "CSS3", logo: <FaCss3 /> },
     { name: "Nodejs", logo: <DiNodejs /> },
     { name: "Expressjs", logo: <SiExpress /> },
@@ -35,7 +35,7 @@ const MyExperience = () => {
     { name: "Rest Api", logo: <TbApi /> },
     { name: "Npm", logo: <FaNpm /> },
     { name: "Postman", logo: <SiPostman /> },
-    { name: "Netlify", logo: <SiNetlify /> },
+    { name: "AWS", logo: <SiAwsorganizations /> },
     { name: "Linux", logo: <SiLinux /> },
     { name: "Bootstrap", logo: <RiBootstrapFill /> },
     { name: "Redux", logo: <SiRedux /> },
