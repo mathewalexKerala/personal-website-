@@ -7,13 +7,13 @@ const Projects = () => {
   const projects = [
     {
       name: "Bank of Maharashtra",
-      link: "https://maharashtra-bank.vercel.app/",
+      link: "https://osumare-landing-page-yn5k.vercel.app/",
       tech: "nextjs",
     },
 
     {
       name: "Webdevtools",
-      link: "https://wdt.adambashaahmednaji.com/",
+      link: "https://web-dev-tools-dun.vercel.app/",
       tech: "nextjs,redux,styled-components",
     },
     {
